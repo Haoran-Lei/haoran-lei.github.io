@@ -47,7 +47,7 @@
     </section>
 
     <section class="focus-strip"><div class="page-width focus-grid">
-      <div><strong>Robotics software</strong><span>ROS, MoveIt, planning, multi-robot coordination</span></div>
+      <div><strong>Robotics software</strong><span>ROS, MoveIt, Isaac Sim, planning, multi-robot coordination</span></div>
       <div><strong>Perception & ML</strong><span>RGB-D, YOLO, point clouds, physiological signals, world models</span></div>
       <div><strong>Embedded & hardware</strong><span>STM32, ESP32, Raspberry Pi, PCB, edge deployment</span></div>
       <div><strong>Controls & integration</strong><span>Feedback control, sensors, pneumatic actuation</span></div>
@@ -59,7 +59,7 @@
         <details class="entry" open>
           <summary>
             <div class="entry-date"><span>Jun 2026</span><span>Aug 2026</span></div>
-            <div class="entry-main"><p class="entry-type">Robotics Software / Embodied AI Intern · Beijing, China</p><h3>Tashan Technology</h3><p class="entry-overview">Built and integrated an RGB-D perception-to-grasping pipeline for a custom mobile dual-arm robot.</p><ul class="tags"><li>ROS Noetic</li><li>MoveIt</li><li>RGB-D</li><li>RKNN</li><li>RK3568</li></ul></div>
+            <div class="entry-main"><p class="entry-type">Robotics Software / Embodied AI Intern · Beijing, China</p><h3>Tashan Technology</h3><p class="entry-overview">Built and integrated an RGB-D perception-to-grasping pipeline for a custom mobile dual-arm robot.</p><ul class="tags"><li>ROS Noetic</li><li>MoveIt</li><li>Isaac Sim</li><li>RGB-D</li><li>RKNN</li><li>RK3568</li></ul></div>
             <span class="expand-label"><span class="closed-text">View details</span><span class="open-text">Hide details</span><i></i></span>
           </summary>
           <div class="entry-details"><h4>What I worked on</h4><ul>
@@ -67,6 +67,7 @@
             <li>Developed the complete RGB-D perception pipeline by combining RealSense sensing, YOLO object detection, point-cloud ROI processing, camera calibration, and TF coordinate-frame transformations.</li>
             <li>Implemented 3D object-pose estimation and connected the resulting poses to MoveIt inverse kinematics and trajectory planning, enabling autonomous grasping of bottle-shaped objects.</li>
             <li>Configured and validated the ROS Noetic and MoveIt software stack, including URDF/Xacro/SRDF robot models, planning groups, joint limits, controllers, TF transforms, ros_control interfaces, and RViz/Gazebo simulation environments.</li>
+            <li>Used NVIDIA Isaac Sim to build and run simulations of the company’s custom robot.</li>
             <li>Investigated collision-aware manipulation using Planning Scene, OctoMap, live point-cloud updates, and collision objects to improve motion-planning reliability in cluttered environments.</li>
             <li>Evaluated and tuned TRAC-IK, KDL, OMPL, and CHOMP parameters while debugging inverse-kinematics, trajectory-planning, and collision-checking behavior.</li>
             <li>Quantized perception models, converted them to RKNN format, and deployed them to the RK3568 platform for onboard robotic perception and edge inference.</li>
@@ -224,7 +225,7 @@
       <div class="section-heading"><div><p class="section-label">Technical profile</p><h2>Skills</h2></div></div>
       <div class="skill-grid">
         <article><h3>Programming</h3><p>Python, C, C++, Verilog, Bash, Linux, Git</p></article>
-        <article><h3>Robotics & control</h3><p>ROS, ROS2, ROS Noetic, MoveIt, RViz, Gazebo, URDF/Xacro/SRDF, TF, ros_control, inverse kinematics, motion planning, grasp planning, task scheduling, inter-robot communication, feedback control</p></article>
+        <article><h3>Robotics & control</h3><p>ROS, ROS2, ROS Noetic, MoveIt, RViz, Gazebo, NVIDIA Isaac Sim, URDF/Xacro/SRDF, TF, ros_control, inverse kinematics, motion planning, grasp planning, task scheduling, inter-robot communication, feedback control</p></article>
         <article><h3>Perception & machine learning</h3><p>YOLOv5, YOLOv8, YOLO26, PyTorch, RGB-D perception, point-cloud processing, 3D object-pose estimation, camera calibration, RNN, LSTM, GNN, EEG/EOG signal processing, world models, VLA and embodied-model prototyping</p></article>
         <article><h3>Embedded platforms</h3><p>STM32, ESP32, Raspberry Pi 4/5, RK3568/RK3588, RKNN deployment, GPIO, embedded Linux, edge deployment, embedded debugging</p></article>
         <article><h3>Hardware design & development</h3><p>Schematic capture, PCB layout and routing, component selection, circuit simulation, soldering, board bring-up, sensor interfaces, power regulation, Altium Designer, LTspice, Fusion 360</p></article>
