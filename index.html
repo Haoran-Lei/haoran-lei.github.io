@@ -62,12 +62,16 @@
             <span class="expand-label"><span class="closed-text">View details</span><span class="open-text">Hide details</span><i></i></span>
           </summary>
           <div class="entry-details"><h4>What I worked on</h4><ul>
-            <li>Integrated RealSense D435i sensing, YOLO detection, point-cloud ROI processing, camera calibration, and TF transformations into a unified perception pipeline.</li>
-            <li>Implemented 3D object-pose estimation and connected perception outputs to MoveIt inverse kinematics and trajectory planning for autonomous grasping.</li>
-            <li>Configured and validated URDF/Xacro/SRDF models, planning groups, joint limits, controllers, and RViz/Gazebo environments.</li>
-            <li>Investigated collision-aware manipulation with Planning Scene, OctoMap, point-cloud updates, and collision objects; tuned TRAC-IK, KDL, OMPL, and CHOMP parameters.</li>
-            <li>Quantized vision models, converted them to RKNN, and deployed onboard inference to an RK3568 edge platform.</li>
-            <li>Diagnosed cross-system failures spanning camera calibration, TF, robot state, planning, the mobile base, dual arms, cameras, and end effectors.</li>
+            <li>Integrated a RealSense D435i RGB-D camera, tactile sensors, dual robotic arms, end effectors, and an RK3568 edge-computing platform into a custom mobile dual-arm robotic system.</li>
+            <li>Developed the complete RGB-D perception pipeline by combining RealSense sensing, YOLO object detection, point-cloud ROI processing, camera calibration, and TF coordinate-frame transformations.</li>
+            <li>Implemented 3D object-pose estimation and connected the resulting poses to MoveIt inverse kinematics and trajectory planning, enabling autonomous grasping of bottle-shaped objects.</li>
+            <li>Configured and validated the ROS Noetic and MoveIt software stack, including URDF/Xacro/SRDF robot models, planning groups, joint limits, controllers, TF transforms, ros_control interfaces, and RViz/Gazebo simulation environments.</li>
+            <li>Investigated collision-aware manipulation using Planning Scene, OctoMap, live point-cloud updates, and collision objects to improve motion-planning reliability in cluttered environments.</li>
+            <li>Evaluated and tuned TRAC-IK, KDL, OMPL, and CHOMP parameters while debugging inverse-kinematics, trajectory-planning, and collision-checking behavior.</li>
+            <li>Quantized perception models, converted them to RKNN format, and deployed them to the RK3568 platform for onboard robotic perception and edge inference.</li>
+            <li>Investigated and prototyped vision-language-action and embodied foundation-model approaches for robotic manipulation tasks.</li>
+            <li>Diagnosed system-level perception, planning, and hardware-software integration failures involving camera calibration, coordinate transformations, the TF tree, robot-state estimation, control interfaces, power-up behavior, and unstable robotic operation.</li>
+            <li>Debugged communication and control across the mobile base, dual arms, cameras, tactile sensors, end effectors, and edge-computing hardware as a single integrated system.</li>
           </ul></div>
         </details>
 
@@ -78,11 +82,13 @@
             <span class="expand-label"><span class="closed-text">View details</span><span class="open-text">Hide details</span><i></i></span>
           </summary>
           <div class="entry-details"><h4>What I worked on</h4><ul>
-            <li>Designed the controller architecture covering joystick position sensing, processing, display, wireless communication, charging, and USB Power Delivery.</li>
-            <li>Created schematics and PCB layouts, selected components, and integrated deadman safety logic and processor, display, and communication interfaces.</li>
-            <li>Reviewed power budgets, signal and interface constraints, manufacturability, maintainability, and enclosure limitations.</li>
-            <li>Assembled and powered up the prototype, calibrated joystick zero points and travel ranges, and debugged power, signal acquisition, display, and wireless communication.</li>
-            <li>Worked with mechanical and electrical engineers on component placement, enclosure space, and cable routing.</li>
+            <li>Independently developed the complete hardware architecture for a wireless intelligent joystick used in automotive and engineering-control applications.</li>
+            <li>Defined the system around joystick position sensing, signal processing, processor interfaces, display integration, wireless communication, power and charging, and USB Power Delivery.</li>
+            <li>Designed schematics and PCB layouts, selected key components, and integrated deadman safety logic, display circuitry, communication modules, charging functions, and USB PD interfaces within a constrained enclosure.</li>
+            <li>Reviewed power budgets, interface constraints, safety-trigger behavior, signal integrity, manufacturability, maintainability, and the interaction between the electronics and mechanical enclosure.</li>
+            <li>Supported interface definition, hardware architecture evaluation, prototype bring-up, and functional validation throughout design iteration.</li>
+            <li>Assembled and powered up the prototype, calibrated joystick zero points and travel ranges, and debugged power-supply, signal-acquisition, processor, display, charging, and wireless-communication issues.</li>
+            <li>Collaborated with mechanical and electrical engineers to optimize component placement, enclosure space, cable routing, and serviceability, advancing the design from concept to a functional prototype.</li>
           </ul></div>
         </details>
 
@@ -93,9 +99,11 @@
             <span class="expand-label"><span class="closed-text">View details</span><span class="open-text">Hide details</span><i></i></span>
           </summary>
           <div class="entry-details"><h4>What I worked on</h4><ul>
-            <li>Owned the computer-vision workflow from data collection, annotation, and augmentation through model training, validation, deployment, and demonstration.</li>
-            <li>Applied models to vehicle-color recognition, water-level estimation, tactile-paving obstruction detection, and jumping-action detection.</li>
-            <li>Achieved approximately 85% overall accuracy and tuned confidence thresholds and post-processing to reduce false detections.</li>
+            <li>Developed and deployed eight YOLOv5 and YOLOv8 computer-vision models for human-action recognition and smart-city perception applications.</li>
+            <li>Built the complete computer-vision workflow covering data collection, annotation, augmentation, model training, validation, deployment, and live demonstration.</li>
+            <li>Applied the models to vehicle-color recognition, water-level estimation, tactile-paving obstruction detection, jumping-action detection, and other urban-perception tasks.</li>
+            <li>Achieved approximately 85% overall accuracy across the application set and analyzed model behavior during validation and deployment.</li>
+            <li>Tuned confidence thresholds and post-processing logic to reduce false detections and improve the reliability of the deployed demonstrations.</li>
           </ul></div>
         </details>
       </div>
@@ -111,10 +119,16 @@
             <span class="expand-label"><span class="closed-text">View details</span><span class="open-text">Hide details</span><i></i></span>
           </summary>
           <div class="entry-details two-column-details"><div><h4>System goal</h4><p>Detect posture and loss-of-balance conditions, then coordinate controlled pneumatic inflation for real-time assistance.</p></div><div><h4>My contributions</h4><ul>
-            <li>Developed an IMU motion-processing pipeline for posture tracking and assistance triggering.</li>
-            <li>Implemented pressure acquisition and closed-loop control to regulate chamber inflation toward a target pressure.</li>
-            <li>Integrated posture estimation, pressure feedback, airflow regulation, and solenoid-valve actuation.</li>
-            <li>Built calibration, data logging, parameter tracking, and repeatable stability, compliance, and repeatability tests.</li>
+            <li>Collaborated with Stanford University’s CHARM Laboratory on the cross-institutional development of an inflatable soft robotic assistive device.</li>
+            <li>Served as the lead Penn student researcher for sensing, control, hardware architecture, experimental design, prototype development, and complete system integration.</li>
+            <li>Integrated IMUs, pressure sensors, solenoid valves, pneumatic chambers and airflow components, control electronics, and data-acquisition software into the wearable prototype.</li>
+            <li>Developed an IMU-based motion-processing and sensing pipeline to track body posture and motion in real time and distinguish normal movement from loss-of-balance conditions.</li>
+            <li>Converted the posture-estimation output into real-time input for assistance triggering and higher-level control decisions.</li>
+            <li>Implemented pressure acquisition and closed-loop feedback-control logic that processes pressure-sensor measurements and regulates pneumatic chamber inflation toward a target pressure.</li>
+            <li>Designed and integrated solenoid-valve driving and control logic that coordinates posture estimation, pressure feedback, airflow regulation, and pneumatic actuation.</li>
+            <li>Built sensor-calibration, valve-control integration, data-logging, parameter-tracking, and repeatable experimental workflows.</li>
+            <li>Conducted stability, compliance, and system-repeatability testing while maintaining experimental records and parameter documentation.</li>
+            <li>Trained and tested a world-model component for body-posture understanding and pressure-control experiments.</li>
           </ul></div></div>
         </details>
 
@@ -125,10 +139,14 @@
             <span class="expand-label"><span class="closed-text">View details</span><span class="open-text">Hide details</span><i></i></span>
           </summary>
           <div class="entry-details two-column-details"><div><h4>Result</h4><p>Reached approximately <strong>96% validation accuracy</strong> with stable AUC performance, then demonstrated the classifier on embedded hardware.</p></div><div><h4>My contributions</h4><ul>
-            <li>Implemented filtering, normalization, segmentation, training, evaluation, and misclassification analysis.</li>
-            <li>Compared preprocessing windows and RNN/LSTM architectures and evaluated accuracy and AUC.</li>
-            <li>Optimized real-time inference for Raspberry Pi 5 latency, memory use, and thermal constraints.</li>
-            <li>Designed a GPIO switch and LED PCB to connect the embedded classifier to a physical human-machine interface.</li>
+            <li>Developed a non-invasive brain-computer interface using EEG and EOG signals for motor-imagery classification.</li>
+            <li>Built the end-to-end physiological-signal processing and machine-learning pipeline, including filtering, normalization, segmentation, model training, validation, evaluation, and deployment.</li>
+            <li>Trained and evaluated RNN and LSTM architectures, achieving approximately 96% validation accuracy with stable AUC performance.</li>
+            <li>Compared preprocessing windows, model architectures, and evaluation metrics to understand the tradeoffs between classification performance and embedded execution.</li>
+            <li>Analyzed misclassified samples and used the results to improve evaluation quality and the interpretability of the embedded inference workflow.</li>
+            <li>Deployed real-time machine-learning inference on a Raspberry Pi 5 for a portable embedded implementation.</li>
+            <li>Optimized the deployed pipeline around latency, memory usage, and thermal constraints relevant to edge-robotics and portable-system applications.</li>
+            <li>Designed a GPIO switch and LED PCB that connected the Raspberry Pi classifier, embedded hardware, inference software, and control pipeline to a physical human-machine interface.</li>
           </ul></div></div>
         </details>
 
@@ -139,7 +157,12 @@
             <span class="expand-label"><span class="closed-text">View details</span><span class="open-text">Hide details</span><i></i></span>
           </summary>
           <div class="entry-details two-column-details"><div><h4>System goal</h4><p>Translate a customer order into coordinated, concurrent robot actions across multiple assembly workstations.</p></div><div><h4>My contributions</h4><ul>
-            <li>Built a mid-level task scheduler and inter-robot communication framework.</li><li>Managed task dependencies, robot availability, order selection, and execution state.</li><li>Integrated scheduling and communication with the manipulation pipeline for autonomous end-to-end execution.</li>
+            <li>Developed a mid-level task scheduler and inter-robot communication framework for coordinating four Franka Panda robotic arms in a collaborative food-assembly task.</li>
+            <li>Implemented task-allocation and execution logic that translated customer-selected cereal and side orders into coordinated robot actions across multiple workstations.</li>
+            <li>Managed task dependencies, robot availability, execution state, and communication between the individual robot processes.</li>
+            <li>Enabled concurrent operation of all four robotic arms without losing the dependency ordering required by the shared assembly workflow.</li>
+            <li>Integrated the scheduling and communication components with the robotic manipulation pipeline.</li>
+            <li>Supported autonomous end-to-end execution from customer order input through coordinated preparation to completed meal assembly.</li>
           </ul></div></div>
         </details>
 
@@ -150,7 +173,15 @@
             <span class="expand-label"><span class="closed-text">View details</span><span class="open-text">Hide details</span><i></i></span>
           </summary>
           <div class="entry-details two-column-details"><div><h4>System goal</h4><p>Provide robust pod-speed and distance sensing while supporting reliable power, communication, and full-vehicle integration.</p></div><div><h4>My contributions</h4><ul>
-            <li>Integrated optical-flow, full-spectrum, and acceleration sensors with a Raspberry Pi 4 for speed estimation and wireless control.</li><li>Designed the navigation mainboard with power regulation, Raspberry Pi, accelerometer, and multiple sensor interfaces.</li><li>Completed simulation, schematic, and PCB layout for a time-of-flight distance-sensing system.</li><li>Performed soldering, power-up inspection, sensor communication testing, debugging, and integrated vehicle validation.</li><li>Created troubleshooting procedures for sensor drift, power stability, and wireless-link reliability.</li>
+            <li>Led the electronics-navigation work and coordinated subsystem integration, hardware validation, and debugging for the student-built Hyperloop pod.</li>
+            <li>Integrated optical-flow, full-spectrum, and acceleration sensors with a Raspberry Pi 4 for pod-speed estimation and wireless control.</li>
+            <li>Designed and validated the navigation mainboard, including Raspberry Pi connections, voltage and power regulation, accelerometer circuitry, and multiple sensor interfaces.</li>
+            <li>Completed circuit simulation, schematic design, component integration, and PCB layout for a time-of-flight distance-sensing system.</li>
+            <li>Optimized the ToF design around sensor power, controller interfaces, signal stability, maintainability, and reliable integration with the wider navigation electronics.</li>
+            <li>Performed PCB soldering, power-up inspection, sensor communication testing, and distance-measurement debugging.</li>
+            <li>Resolved hardware-connection, power-supply, sensor-data, and communication abnormalities during board bring-up and subsystem testing.</li>
+            <li>Developed system-testing and troubleshooting procedures for sensor drift, power stability, wireless-link reliability, and repeatable hardware validation.</li>
+            <li>Completed integrated vehicle validation and coordinated the navigation subsystem with the wider pod electronics.</li>
           </ul></div></div>
         </details>
 
@@ -161,7 +192,12 @@
             <span class="expand-label"><span class="closed-text">View details</span><span class="open-text">Hide details</span><i></i></span>
           </summary>
           <div class="entry-details two-column-details"><div><h4>System goal</h4><p>Turn intuitive hand orientation and motion into wireless vehicle control while retaining basic onboard obstacle avoidance.</p></div><div><h4>My contributions</h4><ul>
-            <li>Built the ESP32 glove and STM32 vehicle-controller architecture and mapped IMU measurements to driving commands.</li><li>Integrated motor control, lighting effects, and wireless command reception.</li><li>Added ultrasonic forward obstacle detection and basic autonomous avoidance.</li><li>Completed circuit connection, chassis assembly, sensor calibration, and system testing.</li>
+            <li>Developed the complete two-device architecture consisting of an ESP32-based wearable glove and an STM32-based vehicle controller.</li>
+            <li>Integrated the glove IMU and developed the mapping from hand orientation and motion to wireless driving commands.</li>
+            <li>Used the STM32 as the central vehicle controller for wireless command reception, motor-control logic, and lighting effects.</li>
+            <li>Integrated an ultrasonic sensor for forward obstacle detection.</li>
+            <li>Implemented basic autonomous obstacle-avoidance behavior that could complement the glove-based manual control mode.</li>
+            <li>Completed circuit connection, embedded-device integration, chassis assembly, sensor calibration, command testing, and full-system validation.</li>
           </ul></div></div>
         </details>
       </div>
@@ -171,17 +207,20 @@
       <div class="section-heading"><div><p class="section-label">Technical profile</p><h2>Skills</h2></div></div>
       <div class="skill-grid">
         <article><h3>Programming</h3><p>Python, C, C++, Verilog, Bash, Linux, Git</p></article>
-        <article><h3>Robotics & control</h3><p>ROS/ROS2, MoveIt, RViz, Gazebo, URDF/Xacro/SRDF, TF, ros_control, IK, motion and grasp planning, feedback control</p></article>
-        <article><h3>Perception & ML</h3><p>YOLOv5/v8, PyTorch, RGB-D perception, point clouds, camera calibration, RNN, LSTM, GNN, EEG/EOG processing</p></article>
-        <article><h3>Embedded & hardware</h3><p>STM32, ESP32, Raspberry Pi 4/5, RK3568/RK3588, RKNN, GPIO, embedded Linux, Altium Designer, LTspice, Vivado, Xilinx SDK</p></article>
+        <article><h3>Robotics & control</h3><p>ROS, ROS2, ROS Noetic, MoveIt, RViz, Gazebo, URDF/Xacro/SRDF, TF, ros_control, inverse kinematics, motion planning, grasp planning, task scheduling, inter-robot communication, feedback control</p></article>
+        <article><h3>Perception & machine learning</h3><p>YOLOv5, YOLOv8, YOLO26, PyTorch, RGB-D perception, point-cloud processing, 3D object-pose estimation, camera calibration, RNN, LSTM, GNN, EEG/EOG signal processing, VLA and embodied-model prototyping</p></article>
+        <article><h3>Embedded platforms</h3><p>STM32, ESP32, Raspberry Pi 4/5, RK3568/RK3588, RKNN deployment, GPIO, embedded Linux, edge deployment, embedded debugging</p></article>
+        <article><h3>Hardware design & development</h3><p>Schematic capture, PCB layout and routing, component selection, circuit simulation, soldering, board bring-up, sensor interfaces, power regulation, Altium Designer, LTspice, Fusion 360</p></article>
+        <article><h3>Sensors & actuation</h3><p>IMUs, pressure sensors, optical-flow sensors, time-of-flight sensors, accelerometers, ultrasonic sensors, RealSense D435i, tactile sensors, solenoid valves, pneumatic actuation</p></article>
+        <article><h3>Development tools</h3><p>Vivado, Xilinx SDK, ROS command-line tools, RViz, Gazebo, Bash, Linux, Git</p></article>
       </div>
     </section>
 
     <section class="content-section page-width" id="education">
       <div class="section-heading"><div><p class="section-label">Academic background</p><h2>Education</h2></div></div>
       <div class="education-grid">
-        <article><div><h3>University of Pennsylvania</h3><p>MSE, Electrical Engineering · GPA 3.9 / 4.0</p><small>Robotics, Feedback Control, Machine Learning, Smart Devices, Graph Neural Networks, Nanorobotics</small></div><time>Sep 2025 — Dec 2026</time></article>
-        <article><div><h3>University of Edinburgh</h3><p>BEng (Hons), Electronics & Electrical Engineering · First Class</p><small>Embedded Systems, Digital Design, Instrumentation, Signals, Electronics, Power Systems</small></div><time>Sep 2021 — Jun 2025</time></article>
+        <article><div><h3>University of Pennsylvania</h3><p>MSE, Electrical Engineering · GPA 3.9 / 4.0</p><small>Relevant coursework: Smart Devices, Statistics for Data Science, Graph Neural Networks, Nanorobotics, Introduction to Robotics, Feedback Control Design and Analysis, Applied Machine Learning</small></div><time>Sep 2025 — Dec 2026</time></article>
+        <article><div><h3>University of Edinburgh</h3><p>BEng (Hons), Electronics & Electrical Engineering · First Class</p><small>Relevant coursework: Data Analysis and Machine Learning, Analog Circuits, Digital System Design, Microelectronic Design and Fabrication, Software and Embedded Systems, Signals and Communication Systems, Control and Instrumentation Engineering, Sensors and Instrumentation, Microelectronic Devices, Power Electronics and Electrical Machines</small></div><time>Sep 2021 — Jun 2025</time></article>
       </div>
     </section>
 
