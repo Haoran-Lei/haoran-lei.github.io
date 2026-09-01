@@ -1,6 +1,6 @@
 # Haoran Lei - Engineering Portfolio
 
-A concise job-application portfolio covering robotics software, embedded systems, controls, perception, hardware integration, education, and tailored resumes.
+A concise job-application portfolio covering robotics software, embedded systems, controls, perception, hardware integration, and education.
 
 ## Publish with GitHub Pages
 
