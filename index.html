@@ -31,8 +31,7 @@
     <section class="hero page-width">
       <div class="hero-copy">
         <p class="status"><span></span> Seeking full-time roles starting after December 2026</p>
-        <h1>Robotics engineer bridging perception, control, and embedded hardware.</h1>
-        <p class="hero-summary">I am an Electrical Engineering MSE student at the University of Pennsylvania with hands-on experience building complete robotic and embedded systems—from sensing and machine learning to motion planning, feedback control, PCB design, and edge deployment.</p>
+        <h1 class="hero-summary">I am an Electrical Engineering MSE student at the University of Pennsylvania with hands-on experience building complete robotic and embedded systems—from sensing and machine learning to motion planning, feedback control, PCB design, and edge deployment.</h1>
         <div class="hero-actions"><a class="button primary" href="#projects">View projects</a><a class="button secondary" href="mailto:hr782357345@gmail.com">Contact me</a></div>
       </div>
       <aside class="profile-card" aria-label="Candidate overview">
@@ -136,6 +135,38 @@
 
         <details class="entry">
           <summary>
+            <div class="entry-date"><span>Jan 2026</span><span>Jun 2026</span></div>
+            <div class="entry-main"><p class="entry-type">Course Robotics Project · University of Pennsylvania</p><h3>Multi-Robot Task Scheduling with Four Franka Panda Arms</h3><p class="entry-overview">Developed the scheduler and communication framework that coordinated four robot arms through an autonomous food-assembly workflow.</p><ul class="tags"><li>Franka Panda ×4</li><li>Task scheduling</li><li>Inter-robot communication</li></ul></div>
+            <span class="expand-label"><span class="closed-text">View details</span><span class="open-text">Hide details</span><i></i></span>
+          </summary>
+          <div class="entry-details two-column-details"><div><h4>System goal</h4><p>Translate a customer order into coordinated, concurrent robot actions across multiple assembly workstations.</p></div><div><h4>My contributions</h4><ul>
+            <li>Developed a mid-level task scheduler and inter-robot communication framework for coordinating four Franka Panda robotic arms in a collaborative food-assembly task.</li>
+            <li>Implemented task-allocation and execution logic that translated customer-selected cereal and side orders into coordinated robot actions across multiple workstations.</li>
+            <li>Managed task dependencies, robot availability, execution state, and communication between the individual robot processes.</li>
+            <li>Enabled concurrent operation of all four robotic arms without losing the dependency ordering required by the shared assembly workflow.</li>
+            <li>Integrated the scheduling and communication components with the robotic manipulation pipeline.</li>
+            <li>Supported autonomous end-to-end execution from customer order input through coordinated preparation to completed meal assembly.</li>
+          </ul></div></div>
+        </details>
+
+        <details class="entry">
+          <summary>
+            <div class="entry-date"><span>Sep 2025</span><span>Nov 2025</span></div>
+            <div class="entry-main"><p class="entry-type">Embedded Systems Project · University of Pennsylvania</p><h3>IMU Glove-Controlled Smart Vehicle</h3><p class="entry-overview">Created a two-device embedded system that mapped hand motion from an ESP32 wearable to driving commands on an STM32 vehicle.</p><ul class="tags"><li>ESP32</li><li>STM32</li><li>IMU</li><li>Ultrasonic</li></ul></div>
+            <span class="expand-label"><span class="closed-text">View details</span><span class="open-text">Hide details</span><i></i></span>
+          </summary>
+          <div class="entry-details two-column-details"><div><h4>System goal</h4><p>Turn intuitive hand orientation and motion into wireless vehicle control while retaining basic onboard obstacle avoidance.</p></div><div><h4>My contributions</h4><ul>
+            <li>Developed the complete two-device architecture consisting of an ESP32-based wearable glove and an STM32-based vehicle controller.</li>
+            <li>Integrated the glove IMU and developed the mapping from hand orientation and motion to wireless driving commands.</li>
+            <li>Used the STM32 as the central vehicle controller for wireless command reception, motor-control logic, and lighting effects.</li>
+            <li>Integrated an ultrasonic sensor for forward obstacle detection.</li>
+            <li>Implemented basic autonomous obstacle-avoidance behavior that could complement the glove-based manual control mode.</li>
+            <li>Completed circuit connection, embedded-device integration, chassis assembly, sensor calibration, command testing, and full-system validation.</li>
+          </ul></div></div>
+        </details>
+
+        <details class="entry">
+          <summary>
             <div class="entry-date"><span>Sep 2024</span><span>Jun 2025</span></div>
             <div class="entry-main"><p class="entry-type">Bachelor’s Thesis · University of Edinburgh</p><h3>Real-Time EEG/EOG Brain-Computer Interface on Raspberry Pi</h3><p class="entry-overview">Built a physiological-signal ML pipeline, deployed real-time inference on Raspberry Pi 5, and connected it to a custom physical interface.</p><ul class="tags"><li>EEG / EOG</li><li>RNN / LSTM</li><li>Raspberry Pi 5</li><li>PCB</li></ul></div>
             <span class="expand-label"><span class="closed-text">View details</span><span class="open-text">Hide details</span><i></i></span>
@@ -149,22 +180,6 @@
             <li>Deployed real-time machine-learning inference on a Raspberry Pi 5 for a portable embedded implementation.</li>
             <li>Optimized the deployed pipeline around latency, memory usage, and thermal constraints relevant to edge-robotics and portable-system applications.</li>
             <li>Designed a GPIO switch and LED PCB that connected the Raspberry Pi classifier, embedded hardware, inference software, and control pipeline to a physical human-machine interface.</li>
-          </ul></div></div>
-        </details>
-
-        <details class="entry">
-          <summary>
-            <div class="entry-date"><span>Jan 2026</span><span>Jun 2026</span></div>
-            <div class="entry-main"><p class="entry-type">Course Robotics Project · University of Pennsylvania</p><h3>Multi-Robot Task Scheduling with Four Franka Panda Arms</h3><p class="entry-overview">Developed the scheduler and communication framework that coordinated four robot arms through an autonomous food-assembly workflow.</p><ul class="tags"><li>Franka Panda ×4</li><li>Task scheduling</li><li>Inter-robot communication</li></ul></div>
-            <span class="expand-label"><span class="closed-text">View details</span><span class="open-text">Hide details</span><i></i></span>
-          </summary>
-          <div class="entry-details two-column-details"><div><h4>System goal</h4><p>Translate a customer order into coordinated, concurrent robot actions across multiple assembly workstations.</p></div><div><h4>My contributions</h4><ul>
-            <li>Developed a mid-level task scheduler and inter-robot communication framework for coordinating four Franka Panda robotic arms in a collaborative food-assembly task.</li>
-            <li>Implemented task-allocation and execution logic that translated customer-selected cereal and side orders into coordinated robot actions across multiple workstations.</li>
-            <li>Managed task dependencies, robot availability, execution state, and communication between the individual robot processes.</li>
-            <li>Enabled concurrent operation of all four robotic arms without losing the dependency ordering required by the shared assembly workflow.</li>
-            <li>Integrated the scheduling and communication components with the robotic manipulation pipeline.</li>
-            <li>Supported autonomous end-to-end execution from customer order input through coordinated preparation to completed meal assembly.</li>
           </ul></div></div>
         </details>
 
@@ -184,22 +199,6 @@
             <li>Resolved hardware-connection, power-supply, sensor-data, and communication abnormalities during board bring-up and subsystem testing.</li>
             <li>Developed system-testing and troubleshooting procedures for sensor drift, power stability, wireless-link reliability, and repeatable hardware validation.</li>
             <li>Completed integrated vehicle validation and coordinated the navigation subsystem with the wider pod electronics.</li>
-          </ul></div></div>
-        </details>
-
-        <details class="entry">
-          <summary>
-            <div class="entry-date"><span>Sep 2025</span><span>Nov 2025</span></div>
-            <div class="entry-main"><p class="entry-type">Embedded Systems Project · University of Pennsylvania</p><h3>IMU Glove-Controlled Smart Vehicle</h3><p class="entry-overview">Created a two-device embedded system that mapped hand motion from an ESP32 wearable to driving commands on an STM32 vehicle.</p><ul class="tags"><li>ESP32</li><li>STM32</li><li>IMU</li><li>Ultrasonic</li></ul></div>
-            <span class="expand-label"><span class="closed-text">View details</span><span class="open-text">Hide details</span><i></i></span>
-          </summary>
-          <div class="entry-details two-column-details"><div><h4>System goal</h4><p>Turn intuitive hand orientation and motion into wireless vehicle control while retaining basic onboard obstacle avoidance.</p></div><div><h4>My contributions</h4><ul>
-            <li>Developed the complete two-device architecture consisting of an ESP32-based wearable glove and an STM32-based vehicle controller.</li>
-            <li>Integrated the glove IMU and developed the mapping from hand orientation and motion to wireless driving commands.</li>
-            <li>Used the STM32 as the central vehicle controller for wireless command reception, motor-control logic, and lighting effects.</li>
-            <li>Integrated an ultrasonic sensor for forward obstacle detection.</li>
-            <li>Implemented basic autonomous obstacle-avoidance behavior that could complement the glove-based manual control mode.</li>
-            <li>Completed circuit connection, embedded-device integration, chassis assembly, sensor calibration, command testing, and full-system validation.</li>
           </ul></div></div>
         </details>
       </div>
