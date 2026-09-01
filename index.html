@@ -1,0 +1,199 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Haoran Lei - robotics and electrical engineer specializing in perception, embedded systems, feedback control, and hardware-software integration." />
+  <meta name="theme-color" content="#ffffff" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Haoran Lei | Robotics & Electrical Engineer" />
+  <meta property="og:description" content="Robotics, embedded systems, controls, perception, and hardware-software integration." />
+  <meta property="og:image" content="assets/og.png" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Haoran Lei | Robotics & Electrical Engineer" />
+  <meta name="twitter:description" content="Robotics, embedded systems, controls, perception, and hardware-software integration." />
+  <meta name="twitter:image" content="assets/og.png" />
+  <title>Haoran Lei | Robotics & Electrical Engineer</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="identity" href="#top"><span class="identity-name">Haoran Lei</span><span class="identity-role">Robotics & Electrical Engineer</span></a>
+      <nav aria-label="Primary navigation"><a href="#experience">Experience</a><a href="#projects">Projects</a><a href="#skills">Skills</a><a href="#education">Education</a></nav>
+      <a class="header-contact" href="mailto:hr782357345@gmail.com">Contact</a>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="hero page-width">
+      <div class="hero-copy">
+        <p class="status"><span></span> Seeking full-time roles starting after December 2026</p>
+        <h1>Robotics engineer bridging perception, control, and embedded hardware.</h1>
+        <p class="hero-summary">I am an Electrical Engineering MSE student at the University of Pennsylvania with hands-on experience building complete robotic and embedded systems—from sensing and machine learning to motion planning, feedback control, PCB design, and edge deployment.</p>
+        <div class="hero-actions"><a class="button primary" href="#projects">View projects</a><a class="button secondary" href="assets/resumes/Haoran-Lei-Robotics-Resume.pdf">Download résumé</a></div>
+      </div>
+      <aside class="profile-card" aria-label="Candidate overview">
+        <h2>At a glance</h2>
+        <dl>
+          <div><dt>Current</dt><dd>University of Pennsylvania<br />MSE Electrical Engineering</dd></div>
+          <div><dt>Graduation</dt><dd>December 2026</dd></div>
+          <div><dt>GPA</dt><dd>3.9 / 4.0</dd></div>
+          <div><dt>Focus</dt><dd>Robotics · Embedded · Controls · Perception</dd></div>
+          <div><dt>Location</dt><dd>Philadelphia, PA</dd></div>
+        </dl>
+      </aside>
+    </section>
+
+    <section class="focus-strip"><div class="page-width focus-grid">
+      <div><strong>Robotics software</strong><span>ROS, MoveIt, planning, multi-robot coordination</span></div>
+      <div><strong>Perception & ML</strong><span>RGB-D, YOLO, point clouds, physiological signals</span></div>
+      <div><strong>Embedded & hardware</strong><span>STM32, ESP32, Raspberry Pi, PCB, edge deployment</span></div>
+      <div><strong>Controls & integration</strong><span>Feedback control, sensors, pneumatic actuation</span></div>
+    </div></section>
+
+    <section class="content-section page-width" id="experience">
+      <div class="section-heading"><div><p class="section-label">Professional experience</p><h2>Engineering experience</h2></div><p>Open an entry to see the systems, tools, and responsibilities in detail.</p></div>
+      <div class="entries">
+        <details class="entry" open>
+          <summary>
+            <div class="entry-date"><span>Jun 2026</span><span>Aug 2026</span></div>
+            <div class="entry-main"><p class="entry-type">Robotics Software / Embodied AI Intern · Beijing, China</p><h3>Tashan Technology</h3><p class="entry-overview">Built and integrated an RGB-D perception-to-grasping pipeline for a custom mobile dual-arm robot.</p><ul class="tags"><li>ROS Noetic</li><li>MoveIt</li><li>RGB-D</li><li>RKNN</li><li>RK3568</li></ul></div>
+            <span class="expand-label"><span class="closed-text">View details</span><span class="open-text">Hide details</span><i></i></span>
+          </summary>
+          <div class="entry-details"><h4>What I worked on</h4><ul>
+            <li>Integrated RealSense D435i sensing, YOLO detection, point-cloud ROI processing, camera calibration, and TF transformations into a unified perception pipeline.</li>
+            <li>Implemented 3D object-pose estimation and connected perception outputs to MoveIt inverse kinematics and trajectory planning for autonomous grasping.</li>
+            <li>Configured and validated URDF/Xacro/SRDF models, planning groups, joint limits, controllers, and RViz/Gazebo environments.</li>
+            <li>Investigated collision-aware manipulation with Planning Scene, OctoMap, point-cloud updates, and collision objects; tuned TRAC-IK, KDL, OMPL, and CHOMP parameters.</li>
+            <li>Quantized vision models, converted them to RKNN, and deployed onboard inference to an RK3568 edge platform.</li>
+            <li>Diagnosed cross-system failures spanning camera calibration, TF, robot state, planning, the mobile base, dual arms, cameras, and end effectors.</li>
+          </ul></div>
+        </details>
+
+        <details class="entry">
+          <summary>
+            <div class="entry-date"><span>Aug 2024</span><span>Sep 2024</span></div>
+            <div class="entry-main"><p class="entry-type">Hardware Engineering Intern · Elx, Spain</p><h3>Lighttech Engineering SL</h3><p class="entry-overview">Developed a wireless intelligent joystick from hardware architecture through functional prototype bring-up.</p><ul class="tags"><li>Schematic</li><li>PCB</li><li>USB PD</li><li>Bring-up</li></ul></div>
+            <span class="expand-label"><span class="closed-text">View details</span><span class="open-text">Hide details</span><i></i></span>
+          </summary>
+          <div class="entry-details"><h4>What I worked on</h4><ul>
+            <li>Designed the controller architecture covering joystick position sensing, processing, display, wireless communication, charging, and USB Power Delivery.</li>
+            <li>Created schematics and PCB layouts, selected components, and integrated deadman safety logic and processor, display, and communication interfaces.</li>
+            <li>Reviewed power budgets, signal and interface constraints, manufacturability, maintainability, and enclosure limitations.</li>
+            <li>Assembled and powered up the prototype, calibrated joystick zero points and travel ranges, and debugged power, signal acquisition, display, and wireless communication.</li>
+            <li>Worked with mechanical and electrical engineers on component placement, enclosure space, and cable routing.</li>
+          </ul></div>
+        </details>
+
+        <details class="entry">
+          <summary>
+            <div class="entry-date"><span>Jun 2024</span><span>Aug 2024</span></div>
+            <div class="entry-main"><p class="entry-type">Computer Vision Intern · Beijing, China</p><h3>Zhongguancun Science City City Brain Co. Ltd</h3><p class="entry-overview">Developed and deployed eight YOLO models for human-action recognition and smart-city perception.</p><ul class="tags"><li>YOLOv5</li><li>YOLOv8</li><li>Data pipeline</li><li>Deployment</li></ul></div>
+            <span class="expand-label"><span class="closed-text">View details</span><span class="open-text">Hide details</span><i></i></span>
+          </summary>
+          <div class="entry-details"><h4>What I worked on</h4><ul>
+            <li>Owned the computer-vision workflow from data collection, annotation, and augmentation through model training, validation, deployment, and demonstration.</li>
+            <li>Applied models to vehicle-color recognition, water-level estimation, tactile-paving obstruction detection, and jumping-action detection.</li>
+            <li>Achieved approximately 85% overall accuracy and tuned confidence thresholds and post-processing to reduce false detections.</li>
+          </ul></div>
+        </details>
+      </div>
+    </section>
+
+    <section class="content-section page-width" id="projects">
+      <div class="section-heading"><div><p class="section-label">Selected work</p><h2>Projects</h2></div><p>Each project shows the goal and scope first; expand it for implementation details.</p></div>
+      <div class="entries project-entries">
+        <details class="entry" open>
+          <summary>
+            <div class="entry-date"><span>Nov 2025</span><span>Present</span></div>
+            <div class="entry-main"><p class="entry-type">Master’s Thesis · Lead Student Researcher · Penn GRASP & Sung Robotics Labs</p><h3>FallGown: Inflatable Wearable Fall-Mitigation Device</h3><p class="entry-overview">Leading sensing, closed-loop pressure control, and pneumatic actuation for a wearable assistive robot developed with Stanford’s CHARM Lab.</p><ul class="tags"><li>IMU</li><li>Pressure sensing</li><li>Feedback control</li><li>Solenoid valves</li></ul></div>
+            <span class="expand-label"><span class="closed-text">View details</span><span class="open-text">Hide details</span><i></i></span>
+          </summary>
+          <div class="entry-details two-column-details"><div><h4>System goal</h4><p>Detect posture and loss-of-balance conditions, then coordinate controlled pneumatic inflation for real-time assistance.</p></div><div><h4>My contributions</h4><ul>
+            <li>Developed an IMU motion-processing pipeline for posture tracking and assistance triggering.</li>
+            <li>Implemented pressure acquisition and closed-loop control to regulate chamber inflation toward a target pressure.</li>
+            <li>Integrated posture estimation, pressure feedback, airflow regulation, and solenoid-valve actuation.</li>
+            <li>Built calibration, data logging, parameter tracking, and repeatable stability, compliance, and repeatability tests.</li>
+          </ul></div></div>
+        </details>
+
+        <details class="entry">
+          <summary>
+            <div class="entry-date"><span>Sep 2024</span><span>Jun 2025</span></div>
+            <div class="entry-main"><p class="entry-type">Bachelor’s Thesis · University of Edinburgh</p><h3>Real-Time EEG/EOG Brain-Computer Interface on Raspberry Pi</h3><p class="entry-overview">Built a physiological-signal ML pipeline, deployed real-time inference on Raspberry Pi 5, and connected it to a custom physical interface.</p><ul class="tags"><li>EEG / EOG</li><li>RNN / LSTM</li><li>Raspberry Pi 5</li><li>PCB</li></ul></div>
+            <span class="expand-label"><span class="closed-text">View details</span><span class="open-text">Hide details</span><i></i></span>
+          </summary>
+          <div class="entry-details two-column-details"><div><h4>Result</h4><p>Reached approximately <strong>96% validation accuracy</strong> with stable AUC performance, then demonstrated the classifier on embedded hardware.</p></div><div><h4>My contributions</h4><ul>
+            <li>Implemented filtering, normalization, segmentation, training, evaluation, and misclassification analysis.</li>
+            <li>Compared preprocessing windows and RNN/LSTM architectures and evaluated accuracy and AUC.</li>
+            <li>Optimized real-time inference for Raspberry Pi 5 latency, memory use, and thermal constraints.</li>
+            <li>Designed a GPIO switch and LED PCB to connect the embedded classifier to a physical human-machine interface.</li>
+          </ul></div></div>
+        </details>
+
+        <details class="entry">
+          <summary>
+            <div class="entry-date"><span>Jan 2026</span><span>Jun 2026</span></div>
+            <div class="entry-main"><p class="entry-type">Course Robotics Project · University of Pennsylvania</p><h3>Multi-Robot Task Scheduling with Four Franka Panda Arms</h3><p class="entry-overview">Developed the scheduler and communication framework that coordinated four robot arms through an autonomous food-assembly workflow.</p><ul class="tags"><li>Franka Panda ×4</li><li>Task scheduling</li><li>Inter-robot communication</li></ul></div>
+            <span class="expand-label"><span class="closed-text">View details</span><span class="open-text">Hide details</span><i></i></span>
+          </summary>
+          <div class="entry-details two-column-details"><div><h4>System goal</h4><p>Translate a customer order into coordinated, concurrent robot actions across multiple assembly workstations.</p></div><div><h4>My contributions</h4><ul>
+            <li>Built a mid-level task scheduler and inter-robot communication framework.</li><li>Managed task dependencies, robot availability, order selection, and execution state.</li><li>Integrated scheduling and communication with the manipulation pipeline for autonomous end-to-end execution.</li>
+          </ul></div></div>
+        </details>
+
+        <details class="entry">
+          <summary>
+            <div class="entry-date"><span>Sep 2023</span><span>Aug 2024</span></div>
+            <div class="entry-main"><p class="entry-type">Electronics Navigation Project Manager · HypED, University of Edinburgh</p><h3>Hyperloop Pod Navigation & Sensor Integration</h3><p class="entry-overview">Led navigation electronics integration, designed sensing hardware, and validated the subsystem on the complete vehicle.</p><ul class="tags"><li>Raspberry Pi 4</li><li>Optical flow</li><li>ToF</li><li>PCB design</li></ul></div>
+            <span class="expand-label"><span class="closed-text">View details</span><span class="open-text">Hide details</span><i></i></span>
+          </summary>
+          <div class="entry-details two-column-details"><div><h4>System goal</h4><p>Provide robust pod-speed and distance sensing while supporting reliable power, communication, and full-vehicle integration.</p></div><div><h4>My contributions</h4><ul>
+            <li>Integrated optical-flow, full-spectrum, and acceleration sensors with a Raspberry Pi 4 for speed estimation and wireless control.</li><li>Designed the navigation mainboard with power regulation, Raspberry Pi, accelerometer, and multiple sensor interfaces.</li><li>Completed simulation, schematic, and PCB layout for a time-of-flight distance-sensing system.</li><li>Performed soldering, power-up inspection, sensor communication testing, debugging, and integrated vehicle validation.</li><li>Created troubleshooting procedures for sensor drift, power stability, and wireless-link reliability.</li>
+          </ul></div></div>
+        </details>
+
+        <details class="entry">
+          <summary>
+            <div class="entry-date"><span>Sep 2025</span><span>Nov 2025</span></div>
+            <div class="entry-main"><p class="entry-type">Embedded Systems Project · University of Pennsylvania</p><h3>IMU Glove-Controlled Smart Vehicle</h3><p class="entry-overview">Created a two-device embedded system that mapped hand motion from an ESP32 wearable to driving commands on an STM32 vehicle.</p><ul class="tags"><li>ESP32</li><li>STM32</li><li>IMU</li><li>Ultrasonic</li></ul></div>
+            <span class="expand-label"><span class="closed-text">View details</span><span class="open-text">Hide details</span><i></i></span>
+          </summary>
+          <div class="entry-details two-column-details"><div><h4>System goal</h4><p>Turn intuitive hand orientation and motion into wireless vehicle control while retaining basic onboard obstacle avoidance.</p></div><div><h4>My contributions</h4><ul>
+            <li>Built the ESP32 glove and STM32 vehicle-controller architecture and mapped IMU measurements to driving commands.</li><li>Integrated motor control, lighting effects, and wireless command reception.</li><li>Added ultrasonic forward obstacle detection and basic autonomous avoidance.</li><li>Completed circuit connection, chassis assembly, sensor calibration, and system testing.</li>
+          </ul></div></div>
+        </details>
+      </div>
+    </section>
+
+    <section class="content-section page-width" id="skills">
+      <div class="section-heading"><div><p class="section-label">Technical profile</p><h2>Skills</h2></div></div>
+      <div class="skill-grid">
+        <article><h3>Programming</h3><p>Python, C, C++, Verilog, Bash, Linux, Git</p></article>
+        <article><h3>Robotics & control</h3><p>ROS/ROS2, MoveIt, RViz, Gazebo, URDF/Xacro/SRDF, TF, ros_control, IK, motion and grasp planning, feedback control</p></article>
+        <article><h3>Perception & ML</h3><p>YOLOv5/v8, PyTorch, RGB-D perception, point clouds, camera calibration, RNN, LSTM, GNN, EEG/EOG processing</p></article>
+        <article><h3>Embedded & hardware</h3><p>STM32, ESP32, Raspberry Pi 4/5, RK3568/RK3588, RKNN, GPIO, embedded Linux, Altium Designer, LTspice, Vivado, Xilinx SDK</p></article>
+      </div>
+    </section>
+
+    <section class="content-section page-width" id="education">
+      <div class="section-heading"><div><p class="section-label">Academic background</p><h2>Education</h2></div></div>
+      <div class="education-grid">
+        <article><div><h3>University of Pennsylvania</h3><p>MSE, Electrical Engineering · GPA 3.9 / 4.0</p><small>Robotics, Feedback Control, Machine Learning, Smart Devices, Graph Neural Networks, Nanorobotics</small></div><time>Sep 2025 — Dec 2026</time></article>
+        <article><div><h3>University of Edinburgh</h3><p>BEng (Hons), Electronics & Electrical Engineering · First Class</p><small>Embedded Systems, Digital Design, Instrumentation, Signals, Electronics, Power Systems</small></div><time>Sep 2021 — Jun 2025</time></article>
+      </div>
+    </section>
+
+    <section class="resume-section"><div class="page-width resume-inner">
+      <div><p class="section-label">Tailored résumés</p><h2>Download the most relevant version</h2></div>
+      <div class="resume-links"><a href="assets/resumes/Haoran-Lei-Robotics-Resume.pdf"><span>Robotics & software</span><strong>PDF ↓</strong></a><a href="assets/resumes/Haoran-Lei-Hardware-Resume.pdf"><span>Hardware & embedded</span><strong>PDF ↓</strong></a><a href="assets/resumes/Haoran-Lei-Medical-Robotics-Resume.pdf"><span>Medical & assistive robotics</span><strong>PDF ↓</strong></a></div>
+    </div></section>
+
+    <section class="contact-section page-width"><div><p class="section-label">Contact</p><h2>Open to robotics, embedded, controls, perception, and hardware-integration roles.</h2></div><a href="mailto:hr782357345@gmail.com">hr782357345@gmail.com</a></section>
+  </main>
+
+  <footer><div class="page-width"><span>© 2026 Haoran Lei</span><span>Mandarin · English · Spanish (B2)</span></div></footer>
+  <script src="script.js"></script>
+</body>
+</html>
